@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robinson Creek Ranch</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-modern fixed-top">
+        <div class="container">
+
+            <!-- LOGO (IMAGE) -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./image/logo.png" alt="Robinson Creek Ranch" class="navbar-logo" />
+            </a>
+
+            <!-- MOBILE TOGGLE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./accommodations.html">Accommodations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./amenities.html">Amenities</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dining.html">Dining</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./events.html">Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cannabis.html">Cannabis</a>
+                    </li>
+
+                </ul>
+
+                <!-- CTA BUTTON -->
+                <a href="#booking" class="btn btn-primary-custom ms-lg-4">
+                    Book Your Stay
+                </a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- ================= NAVBAR END ================= -->
+
+
+    <!-- ================= HERO SECTION START ================= -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="hero-overlay"></div>
+
+        <div class="container position-relative">
+            <div class="row align-items-center g-5">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-7 col-md-12">
+                    <h1 class="hero-title">
+                        Where <span>Cannabis Culture</span> Meets <br />
+                        California Ranch Living
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Experience luxury lodging, farm-to-table dining, and premium sun-grown
+                        cannabis in the heart of nature.
+                    </p>
+
+                    <div class="hero-buttons mt-4">
+                        <a href="#accommodations" class="btn btn-primary-custom me-3">
+                            Book Your Stay
+                        </a>
+                        <a href="#about" class="btn btn-outline-custom">
+                            Explore the Ranch
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT BOOKING FORM -->
+                <div class="col-lg-5 col-md-12">
+                    <div class="booking-form">
+                        <h4 class="form-title">Book Your Stay</h4>
+
+                        <form>
+                            <div class="mb-3">
+                                <label>Check In</label>
+                                <input type="date" class="form-control" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Check Out</label>
+                                <input type="date" class="form-control" />
+                            </div>
+
+                            <div class="mb-4">
+                                <label>Guests</label>
+                                <select class="form-control">
+                                    <option>1 Guest</option>
+                                    <option>2 Guests</option>
+                                    <option>3 Guests</option>
+                                    <option>4 Guests</option>
+                                    <option>5+ Guests</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-booking w-100">
+                                Check Availability
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================= HERO SECTION END ================= -->
+
+    <!-- ================= ABOUT THE RANCH ================= -->
+    <section class="about-modern">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <!-- Text Content -->
+                <div class="col-lg-6">
+                    <h2 class="section-title">
+                        About <span>The Ranch</span>
+                    </h2>
+
+                    <p class="about-text">
+                        Nestled in California’s countryside, our ranch is a destination where
+                        luxury, nature, and cannabis culture blend seamlessly. Every experience
+                        is crafted to slow time and reconnect you with the land.
+                    </p>
+
+                    <p class="about-text">
+                        Built on values of sustainability, authenticity, and community, we
+                        cultivate sun-grown cannabis, support local ecosystems, and create
+                        meaningful moments for every guest who visits.
+                    </p>
+
+                    <ul class="about-values">
+                        <li>Sustainability & responsible cultivation</li>
+                        <li>Community-driven experiences</li>
+                        <li>Respect for land & heritage</li>
+                    </ul>
+
+                    <a href="#about" class="btn btn-outline-custom mt-4">
+                        Learn More About Us
+                    </a>
+                </div>
+
+                <!-- Image -->
+                <div class="col-lg-6">
+                    <div class="about-image-wrapper">
+                        <img src="./image/about-img.png" alt="About the Ranch" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================= ABOUT THE RANCH END ================= -->
+
+    <!-- ================= EXPERIENCE HIGHLIGHTS SECTION ================= -->
+    <section class="experience-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="section-title">
+                        Experience the <span>Ranch Life</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        A perfect blend of nature, luxury, and cannabis culture
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="experience-card">
+                        <div class="icon gold">
+                            <i class="bi bi-mountain"></i>
+                        </div>
+                        <h4>Outdoor Adventures</h4>
+                        <p>Hiking, fishing, horseback riding, and nature exploration.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="experience-card">
+                        <div class="icon green">
+                            <i class="bi bi-leaf"></i>
+                        </div>
+                        <h4>Cannabis Experience</h4>
+                        <p>Premium sun-grown cannabis and immersive farm experiences.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="experience-card">
+                        <div class="icon gold">
+                            <i class="bi bi-house-heart"></i>
+                        </div>
+                        <h4>Luxury Lodging</h4>
+                        <p>Rustic elegance combined with modern comfort and privacy.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="experience-card">
+                        <div class="icon green">
+                            <i class="bi bi-cup-hot"></i>
+                        </div>
+                        <h4>Farm Dining</h4>
+                        <p>Fresh, locally sourced cuisine crafted by expert chefs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= EXPERIENCE HIGHLIGHTS END ================= -->
+    <!-- ================= ACCOMMODATIONS PREVIEW SECTION ================= -->
+    <section class="accommodations-section">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="section-title">
+                        Luxury <span>Accommodations</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Rustic luxury meets modern comfort in the heart of nature
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accommodation Cards -->
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="accommodation-card">
+                        <img src="./image/Accommodations1.jfif" alt="Creekside Cabin" />
+
+                        <div class="card-content">
+                            <div class="price">$450 <span>/ night</span></div>
+                            <h4>Creekside Cabin</h4>
+                            <p>Private cabin nestled along Robinson Creek with serene views.</p>
+
+                            <ul class="features">
+                                <li>2–4 Guests</li>
+                                <li>Private Deck</li>
+                                <li>Hot Tub</li>
+                                <li>Full Kitchen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="accommodation-card">
+                        <img src="./image/Accommodations2.jfif" alt="Mountain View Lodge" />
+
+                        <div class="card-content">
+                            <div class="price">$650 <span>/ night</span></div>
+                            <h4>Mountain View Lodge</h4>
+                            <p>Spacious lodge with breathtaking panoramic mountain views.</p>
+
+                            <ul class="features">
+                                <li>4–6 Guests</li>
+                                <li>2 King Beds</li>
+                                <li>Fire Pit</li>
+                                <li>Chef Kitchen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="accommodation-card">
+                        <img src="./image/Accommodations3.jfif" alt="Ranch House Estate" />
+
+                        <div class="card-content">
+                            <div class="price">$1,200 <span>/ night</span></div>
+                            <h4>Ranch House Estate</h4>
+                            <p>Our most exclusive estate for large groups and events.</p>
+
+                            <ul class="features">
+                                <li>8–12 Guests</li>
+                                <li>Private Pool</li>
+                                <li>Wine Cellar</li>
+                                <li>Event Space</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <a href="#accommodations" class="btn btn-primary-custom">
+                        View All Accommodations
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ================= ACCOMMODATIONS PREVIEW END ================= -->
+
+    <!-- ================= CANNABIS EXPERIENCE SECTION ================= -->
+    <section class="cannabis-section">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="section-title">
+                        The <span>Cannabis Experience</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Sun-grown, organic cannabis cultivated with care and tradition
+                    </p>
+                </div>
+            </div>
+
+            <!-- Experience Cards -->
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="cannabis-card">
+                        <div class="icon-circle">
+                            <i class="bi bi-sun"></i>
+                        </div>
+                        <h4>Sun-Grown & Organic</h4>
+                        <p>
+                            Sustainably cultivated cannabis grown under the California sun.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="cannabis-card">
+                        <div class="icon-circle">
+                            <i class="bi bi-flower1"></i>
+                        </div>
+                        <h4>Featured Strains</h4>
+                        <p>
+                            Hand-selected premium strains curated for flavor and experience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="cannabis-card">
+                        <div class="icon-circle">
+                            <i class="bi bi-map"></i>
+                        </div>
+                        <h4>Farm Tours</h4>
+                        <p>
+                            Guided tours through our cultivation fields and processing areas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="cannabis-card">
+                        <div class="icon-circle">
+                            <i class="bi bi-shop"></i>
+                        </div>
+                        <h4>On-Site Dispensary</h4>
+                        <p>
+                            Exclusive access to our private dispensary and lounge experience.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ================= CANNABIS EXPERIENCE END ================= -->
+
+    <!-- ================= DINING EXPERIENCE SECTION ================= -->
+    <section class="dining-section">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="section-title">
+                        Dining <span>Experience</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Elevated flavors crafted from farm to table
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dining Cards -->
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-6">
+                    <div class="dining-card">
+                        <img src="./image/Dining1.jfif" alt="Fine Dining" />
+                        <div class="dining-overlay">
+                            <h4>Fine Dining</h4>
+                            <p>
+                                A refined culinary experience featuring seasonal gourmet menus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-6">
+                    <div class="dining-card">
+                        <img src="./image/Dining2.jfif" alt="Ranch Kitchen" />
+                        <div class="dining-overlay">
+                            <h4>Ranch Kitchen</h4>
+                            <p>
+                                Rustic, chef-prepared meals inspired by ranch traditions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-6">
+                    <div class="dining-card">
+                        <img src="./image/Dining3.jfif" alt="Dispensary Lounge" />
+                        <div class="dining-overlay">
+                            <h4>Dispensary Lounge</h4>
+                            <p>
+                                Relax in a curated lounge pairing premium cannabis and cuisine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-6">
+                    <div class="dining-card">
+                        <img src="./image/Dining4.jfif" alt="Cannabis Infused Menu" />
+                        <div class="dining-overlay">
+                            <h4>Cannabis-Infused Menu</h4>
+                            <p>
+                                Thoughtfully dosed infused dishes for elevated dining moments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ================= DINING EXPERIENCE END ================= -->
+
+    <!-- ================= EVENTS & CELEBRATIONS ================= -->
+    <section class="events-modern">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-7">
+                    <h2 class="section-title">
+                        Events & <span>Celebrations</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Host extraordinary moments in a setting designed for unforgettable
+                        celebrations
+                    </p>
+                </div>
+            </div>
+
+            <!-- Event Cards -->
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-modern-card">
+                        <i class="bi bi-heart-fill"></i>
+                        <h4>Weddings</h4>
+                        <p>Romantic ranch weddings surrounded by nature and elegance.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-modern-card">
+                        <i class="bi bi-briefcase-fill"></i>
+                        <h4>Corporate Retreats</h4>
+                        <p>Private retreats designed for focus, creativity, and connection.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-modern-card">
+                        <i class="bi bi-music-note-beamed"></i>
+                        <h4>Private Concerts</h4>
+                        <p>Exclusive live music experiences in a breathtaking outdoor venue.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-modern-card">
+                        <i class="bi bi-people-fill"></i>
+                        <h4>Family Reunions</h4>
+                        <p>Create lifelong memories in a spacious and scenic environment.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <a href="#contact" class="btn btn-primary-custom btn-lg">
+                        Plan Your Event
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ================= EVENTS & CELEBRATIONS END ================= -->
+
+    <!-- ================= RANCH AMENITIES ================= -->
+    <section class="amenities-modern">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-7">
+                    <h2 class="section-title">
+                        Ranch <span>Amenities</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Everything you need for relaxation, wellness, and comfort
+                    </p>
+                </div>
+            </div>
+
+            <!-- Amenities Grid -->
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-modern-card">
+                        <i class="bi bi-water"></i>
+                        <h4>Pool & Hot Tub</h4>
+                        <p>Unwind in our temperature-controlled pool and relaxing hot tubs.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-modern-card">
+                        <i class="bi bi-flower2"></i>
+                        <h4>Spa</h4>
+                        <p>Luxury spa treatments designed to rejuvenate body and mind.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-modern-card">
+                        <i class="bi bi-tree"></i>
+                        <h4>Nature Trails</h4>
+                        <p>Scenic walking and hiking trails surrounded by untouched nature.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-modern-card">
+                        <i class="bi bi-activity"></i>
+                        <h4>Fitness Center</h4>
+                        <p>Fully equipped gym for strength, cardio, and wellness routines.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-modern-card">
+                        <i class="bi bi-cup-hot"></i>
+                        <h4>Coffee Bar</h4>
+                        <p>Freshly brewed coffee and handcrafted beverages all day long.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-modern-card">
+                        <i class="bi bi-wifi"></i>
+                        <h4>High-Speed WiFi</h4>
+                        <p>Stay connected with fast and reliable internet access.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ================= RANCH AMENITIES END ================= -->
+
+
+    <!-- ================= CTA SECTION ================= -->
+    <section class="cta-modern">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+
+                <div class="col-lg-8">
+                    <h2 class="cta-heading">
+                        Ready for an <span>Unforgettable Experience?</span>
+                    </h2>
+
+                    <p class="cta-subtext">
+                        Discover the perfect balance of luxury, nature, and cannabis culture.
+                    </p>
+
+                    <div class="cta-buttons mt-4">
+                        <a href="#accommodations" class="btn btn-outline-custom me-3">
+                            View Accommodations
+                        </a>
+                        <a href="#booking" class="btn btn-primary-custom">
+                            Book Your Stay
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================= CTA SECTION END ================= -->
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer-modern">
+        <div class="container">
+
+            <!-- Top Footer -->
+            <div class="row gy-4">
+
+                <!-- Logo & About -->
+                <div class="col-lg-4">
+                    <h4 class="footer-logo">Robinson Creek Ranch</h4>
+                    <p class="footer-text">
+                        Where luxury ranch living meets premium cannabis experiences in the
+                        heart of nature.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Accommodations</a></li>
+                        <li><a href="#">Experiences</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <p><i class="bi bi-geo-alt"></i> Northern California, USA</p>
+                    <p><i class="bi bi-envelope"></i> info@robinsoncreekranch.com</p>
+                    <p><i class="bi bi-telephone"></i> +1 (234) 567-890</p>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <hr class="footer-divider" />
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom text-center">
+                <p>
+                    © 2026 Robinson Creek Ranch. All rights reserved.
+                    <span> | </span>
+                    <a href="#">Privacy Policy</a>
+                    <span> | </span>
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ================= FOOTER END ================= -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./js/script.js">
+</body>
+
+</html>

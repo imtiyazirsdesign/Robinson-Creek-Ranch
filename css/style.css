@@ -1,0 +1,890 @@
+/* ================= NAVBAR ================= */
+.navbar-modern {
+  background: rgba(20, 18, 16, 0.7);
+  backdrop-filter: blur(14px);
+  padding: 18px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-modern.scrolled {
+  background: #141210;
+  padding: 12px 0;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* LOGO */
+.navbar-logo {
+  height: 44px;
+  width: auto;
+}
+
+/* LINKS */
+.navbar-nav .nav-link {
+  color: #d1d1d1;
+  font-weight: 500;
+  margin: 0 12px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #f5b21b;
+}
+
+/* UNDERLINE EFFECT */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #f5b21b;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* TOGGLER */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* CTA BUTTON */
+.navbar .btn {
+  padding: 10px 26px;
+  border-radius: 10px;
+}
+
+/* MOBILE MENU */
+@media (max-width: 991px) {
+  .navbar-nav {
+    background: #141210;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 12px;
+  }
+
+  .navbar .btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: url("../image/hero-bg.jpg") center/cover no-repeat;
+  padding: 120px 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(20, 18, 16, 0.75),
+    rgba(20, 18, 16, 0.85)
+  );
+  z-index: 1;
+}
+
+.hero-section .container {
+  z-index: 2;
+}
+
+/* LEFT TEXT */
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.hero-title span {
+  color: #f5b21b;
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #d1d1d1;
+  max-width: 520px;
+}
+
+/* BUTTONS */
+.btn-primary-custom {
+  background-color: #e07a16 !important;
+  color: #ffffff !important;
+  padding: 14px 34px !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  border: none !important;
+}
+
+.btn-primary-custom:hover {
+  background-color: #f5b21b !important;
+  color: #141210 !important;
+}
+
+.btn-outline-custom {
+  padding: 14px 34px !important;
+  font-weight: 600 !important;
+  color: #f5b21b !important;
+  border: 2px solid #f5b21b !important;
+  border-radius: 10px !important;
+  background: transparent !important;
+}
+
+.btn-outline-custom:hover {
+  background-color: #f5b21b !important;
+  color: #141210 !important;
+}
+
+/* ================= BOOKING FORM ================= */
+.booking-form {
+  background: rgba(31, 28, 25, 0.9);
+  backdrop-filter: blur(14px);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  max-width: 420px;
+  margin-left: auto;
+}
+
+.form-title {
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.booking-form label {
+  color: #cfcfcf;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.booking-form .form-control {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.booking-form .form-control:focus {
+  border-color: #f5b21b;
+  box-shadow: none;
+  background: transparent;
+  color: #ffffff;
+}
+
+/* BOOK BUTTON */
+.btn-booking {
+  background: #f5b21b !important;
+  color: #141210 !important;
+  font-weight: 600 !important;
+  padding: 14px !important;
+  border-radius: 10px !important;
+  border: none !important;
+}
+
+.btn-booking:hover {
+  background: #e07a16 !important;
+  color: #ffffff !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .booking-form {
+    margin: 40px auto 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+
+/* ================= ABOUT THE RANCH ================= */
+.about-modern {
+  background-color: #141210;
+  padding: 110px 0;
+}
+
+/* Text */
+.about-text {
+  color: #cfcfcf;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* Values */
+.about-values {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.about-values li {
+  color: #d1d1d1;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.about-values li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2fa66a;
+  font-weight: 600;
+}
+
+/* Image */
+.about-image-wrapper {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+}
+
+.about-image-wrapper img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.about-image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-image-wrapper img {
+    height: 300px;
+  }
+}
+
+
+/* ================= EXPERIENCE HIGHLIGHTS ================= */
+.experience-section {
+  background-color: #141210;
+  padding: 100px 0;
+}
+
+/* Section Heading */
+.section-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.section-title span {
+  color: #f5b21b;
+}
+
+.section-subtitle {
+  margin-top: 10px;
+  color: #9e9e9e;
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+/* Cards */
+.experience-card {
+  background-color: #26221e;
+  border-radius: 18px;
+  padding: 40px 25px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.4s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+}
+
+/* Icons */
+.experience-card .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-size: 32px;
+  border: 2px solid;
+}
+
+.icon.gold {
+  color: #f5b21b;
+  border-color: #f5b21b;
+}
+
+.icon.green {
+  color: #2fa66a;
+  border-color: #2fa66a;
+}
+
+/* Text */
+.experience-card h4 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.experience-card p {
+  font-size: 0.95rem;
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.1rem;
+  }
+
+  .experience-card {
+    padding: 35px 22px;
+  }
+}
+
+
+/* ================= ACCOMMODATIONS PREVIEW ================= */
+.accommodations-section {
+  background-color: #1f1c19;
+  padding: 100px 0;
+}
+
+/* Card */
+.accommodation-card {
+  background-color: #26221e;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.4s ease;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.accommodation-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.7);
+}
+
+/* Image */
+.accommodation-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+/* Content */
+.card-content {
+  padding: 28px;
+}
+
+.card-content h4 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+/* Price */
+.price {
+  color: #f5b21b;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.price span {
+  font-size: 0.9rem;
+  color: #9e9e9e;
+}
+
+/* Features */
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  font-size: 0.9rem;
+  color: #d1d1d1;
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.features li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2fa66a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-content {
+    padding: 24px;
+  }
+
+  .price {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* ================= CANNABIS EXPERIENCE ================= */
+.cannabis-section {
+  background-color: #141f1a; /* Dark green background */
+  padding: 100px 0;
+}
+
+/* Cards */
+.cannabis-card {
+  background-color: #1f3329;
+  border-radius: 18px;
+  padding: 40px 28px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(245, 178, 27, 0.25);
+}
+
+.cannabis-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  border-color: #f5b21b;
+}
+
+/* Icon */
+.icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid #f5b21b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+  font-size: 32px;
+  color: #f5b21b;
+}
+
+/* Text */
+.cannabis-card h4 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.cannabis-card p {
+  color: #cfe5d8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cannabis-card {
+    padding: 35px 24px;
+  }
+}
+
+
+/* ================= DINING EXPERIENCE ================= */
+.dining-section {
+  background-color: #1f1c19;
+  padding: 100px 0;
+}
+
+/* Card */
+.dining-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 320px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease;
+}
+
+.dining-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Image */
+.dining-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.dining-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(20, 18, 16, 0.9),
+    rgba(20, 18, 16, 0.3)
+  );
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: all 0.3s ease;
+}
+
+.dining-card:hover .dining-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(20, 18, 16, 0.95),
+    rgba(20, 18, 16, 0.2)
+  );
+}
+
+/* Text */
+.dining-overlay h4 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.dining-overlay p {
+  color: #d1d1d1;
+  font-size: 0.95rem;
+  max-width: 90%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dining-card {
+    height: 260px;
+  }
+
+  .dining-overlay h4 {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* ================= EVENTS – MODERN UI ================= */
+.events-modern {
+  background: radial-gradient(
+    circle at top,
+    #1f1c19,
+    #141210
+  );
+  padding: 110px 0;
+}
+
+/* Modern Card */
+.event-modern-card {
+  height: 100%;
+  background: rgba(38, 34, 30, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 45px 30px;
+  text-align: center;
+  border: 1px solid rgba(245, 178, 27, 0.15);
+  transition: all 0.4s ease;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+}
+
+.event-modern-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  border-color: #f5b21b;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7);
+}
+
+/* Icon */
+.event-modern-card i {
+  font-size: 42px;
+  color: #f5b21b;
+  margin-bottom: 22px;
+}
+
+/* Text */
+.event-modern-card h4 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.event-modern-card p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .event-modern-card {
+    padding: 38px 25px;
+  }
+}
+
+
+/* ================= RANCH AMENITIES ================= */
+.amenities-modern {
+  background-color: #1f1c19;
+  padding: 110px 0;
+}
+
+/* Card */
+.amenity-modern-card {
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #26221e,
+    #1e1b18
+  );
+  border-radius: 18px;
+  padding: 40px 28px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.amenity-modern-card:hover {
+  transform: translateY(-10px);
+  border-color: #2fa66a;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.65);
+}
+
+/* Icon */
+.amenity-modern-card i {
+  font-size: 42px;
+  color: #2fa66a;
+  margin-bottom: 18px;
+}
+
+/* Text */
+.amenity-modern-card h4 {
+  color: #ffffff;
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.amenity-modern-card p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .amenity-modern-card {
+    padding: 35px 24px;
+  }
+}
+/* ================= CTA SECTION ================= */
+.cta-modern {
+  position: relative;
+  padding: 120px 0;
+
+  /* BACKGROUND IMAGE + DARK OVERLAY */
+  background:
+    linear-gradient(
+      rgba(20, 18, 16, 0.75),
+      rgba(20, 18, 16, 0.85)
+    ),
+    url("../image/cta-bg.png") center/cover no-repeat;
+
+  overflow: hidden;
+}
+
+/* Decorative glow (keep as-is) */
+.cta-modern::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(245, 178, 27, 0.15),
+    transparent 70%
+  );
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Ensure content stays above overlay */
+.cta-modern .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Heading */
+.cta-heading {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cta-heading span {
+  color: #f5b21b;
+}
+
+/* Text */
+.cta-subtext {
+  color: #cfcfcf;
+  font-size: 1.05rem;
+}
+
+/* Buttons spacing */
+.cta-buttons a {
+  padding: 14px 36px;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-heading {
+    font-size: 2.2rem;
+  }
+
+  .cta-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+}
+
+
+/* ================= FOOTER ================= */
+.footer-modern {
+  background-color: #0f0e0d;
+  padding: 80px 0 35px;
+  color: #9e9e9e;
+}
+
+/* Logo */
+.footer-logo {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.footer-text {
+  max-width: 320px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Titles */
+.footer-title {
+  color: #ffffff;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #9e9e9e;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f5b21b;
+}
+
+/* Contact Icons */
+.footer-modern i {
+  margin-right: 8px;
+  color: #f5b21b;
+}
+
+/* Social */
+.footer-social {
+  margin-top: 18px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #1f1c19;
+  margin-right: 10px;
+  color: #f5b21b;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: #f5b21b;
+  color: #141210;
+}
+
+/* Divider */
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.05);
+  margin: 40px 0 20px;
+}
+
+/* Bottom */
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #6e6e6e;
+}
+
+.footer-bottom a {
+  color: #6e6e6e;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #f5b21b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-text {
+    max-width: 100%;
+  }
+}
