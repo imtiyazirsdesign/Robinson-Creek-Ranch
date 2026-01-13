@@ -1,11 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dining</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dining.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
+
 <body>
-    
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-modern fixed-top">
+        <div class="container">
+
+            <!-- LOGO (IMAGE) -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./image/logo.png" alt="Robinson Creek Ranch" class="navbar-logo" />
+            </a>
+
+            <!-- MOBILE TOGGLE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./accommodations.html">Accommodations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./amenities.html">Amenities</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dining.html">Dining</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./events.html">Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cannabis.html">Cannabis</a>
+                    </li>
+
+                </ul>
+
+                <!-- CTA BUTTON -->
+                <a href="#booking" class="btn btn-primary-custom ms-lg-4">
+                    Book Your Stay
+                </a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- ================= NAVBAR END ================= -->
+    <!-- ================= DINING PAGE HEADER ================= -->
+    <section class="dining-header">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+
+                <div class="col-lg-8">
+                    <h1 class="dining-title">
+                        Dining <span>Experience</span>
+                    </h1>
+
+                    <p class="dining-subtitle">
+                        Farm-fresh cuisine from our land to your table
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================= DINING PAGE HEADER END ================= -->
+
+    <!-- ================= PRIMARY DINING VENUES ================= -->
+    <section class="dining-venues">
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="row mb-5 text-center">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">
+                        Our <span>Dining Venues</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        From refined evenings to relaxed comfort and crafted cocktails
+                    </p>
+                </div>
+            </div>
+
+            <!-- VENUE 1 -->
+            <div class="row align-items-center venue-row mb-5">
+                <div class="col-lg-6">
+                    <img src="./image/Dining1.jfif" class="venue-img" alt="The Creek House">
+                </div>
+                <div class="col-lg-6">
+                    <div class="venue-content">
+                        <span class="venue-badge">Fine Dining</span>
+                        <h3>The Creek House</h3>
+                        <p>
+                            Our flagship restaurant featuring seasonal tasting menus crafted
+                            from ranch-grown ingredients and elevated culinary artistry.
+                        </p>
+                        <span class="venue-time">🕒 5:00 PM – 10:00 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VENUE 2 -->
+            <div class="row align-items-center venue-row mb-5 flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <img src="./image/Dining2.jfif" class="venue-img" alt="Ranch Kitchen">
+                </div>
+                <div class="col-lg-6">
+                    <div class="venue-content">
+                        <span class="venue-badge">Casual Dining</span>
+                        <h3>Ranch Kitchen</h3>
+                        <p>
+                            Farm-to-table comfort food served in a relaxed atmosphere.
+                            Perfect for families and hearty, satisfying meals.
+                        </p>
+                        <span class="venue-time">🕒 7:00 AM – 9:00 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VENUE 3 -->
+            <div class="row align-items-center venue-row">
+                <div class="col-lg-6">
+                    <img src="./image/Dining3.jfif" class="venue-img" alt="The Dispensary Lounge">
+                </div>
+                <div class="col-lg-6">
+                    <div class="venue-content">
+                        <span class="venue-badge">Bar & Lounge</span>
+                        <h3>The Dispensary Lounge</h3>
+                        <p>
+                            Craft cocktails, local wines, and infused beverages in an
+                            intimate lounge setting with live music on weekends.
+                        </p>
+                        <span class="venue-time">🕒 4:00 PM – 12:00 AM</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SIGNATURE EXPERIENCES ================= -->
+    <section class="signature-experiences">
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="row mb-5 text-center">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">
+                        Signature <span>Experiences</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Curated culinary moments designed for indulgence and discovery
+                    </p>
+                </div>
+            </div>
+
+            <!-- EXPERIENCE CARDS -->
+            <div class="row g-4">
+
+                <!-- CANNABIS-INFUSED MENU -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="experience-card green-card">
+                        <div class="experience-icon">🌿</div>
+                        <h5>Cannabis-Infused Menu</h5>
+                        <p>
+                            Chef-crafted infused dishes, carefully dosed for a refined culinary journey.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- WINE & CANNABIS PAIRING -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="experience-card purple-card">
+                        <div class="experience-icon">🍷</div>
+                        <h5>Wine & Cannabis Pairing</h5>
+                        <p>
+                            Exclusive pairing dinners guided by our sommelier and cannabis experts.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CHEF'S TABLE (OPTIONAL) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="experience-card gold-card">
+                        <div class="experience-icon">⭐</div>
+                        <h5>Chef’s Table Experience</h5>
+                        <p>
+                            An intimate, multi-course tasting experience hosted by our executive chef.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- ================= DINING CTA ================= -->
+<section class="dining-cta text-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <h2 class="cta-title">
+          Reserve Your <span>Table</span>
+        </h2>
+
+        <p class="cta-subtitle">
+          An unforgettable dining experience awaits at Robinson Creek Ranch.
+        </p>
+
+        <a href="#reserve" class="btn dining-cta-btn">
+          Reserve Now
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================= DINING CTA END ================= -->
+
+
+    <!-- ================= DINING INFORMATION ================= -->
+    <section class="dining-info">
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="row mb-5 text-center">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">
+                        Dining <span>Information</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Helpful details to make your dining experience seamless
+                    </p>
+                </div>
+            </div>
+
+            <!-- INFO CARDS -->
+            <div class="row g-4">
+
+                <!-- OPENING HOURS -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="info-card">
+                        <div class="info-icon">🕒</div>
+                        <h5>Opening Hours</h5>
+                        <p>
+                            Fine Dining: 5:00 PM – 10:00 PM<br>
+                            Casual Dining: 7:00 AM – 9:00 PM<br>
+                            Lounge: 4:00 PM – 12:00 AM
+                        </p>
+                    </div>
+                </div>
+
+                <!-- DIETARY OPTIONS -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="info-card">
+                        <div class="info-icon">🥗</div>
+                        <h5>Dietary Options</h5>
+                        <p>
+                            Vegan, vegetarian, gluten-free, and allergy-friendly
+                            options available upon request.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- DRESS CODE -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="info-card">
+                        <div class="info-icon">👔</div>
+                        <h5>Dress Code & Policies</h5>
+                        <p>
+                            Resort casual attire recommended. Reservations suggested
+                            for fine dining experiences.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer-modern">
+        <div class="container">
+
+            <!-- Top Footer -->
+            <div class="row gy-4">
+
+                <!-- Logo & About -->
+                <div class="col-lg-4">
+                    <h4 class="footer-logo">Robinson Creek Ranch</h4>
+                    <p class="footer-text">
+                        Where luxury ranch living meets premium cannabis experiences in the
+                        heart of nature.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Accommodations</a></li>
+                        <li><a href="#">Experiences</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <p><i class="bi bi-geo-alt"></i> Northern California, USA</p>
+                    <p><i class="bi bi-envelope"></i> info@robinsoncreekranch.com</p>
+                    <p><i class="bi bi-telephone"></i> +1 (234) 567-890</p>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <hr class="footer-divider" />
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom text-center">
+                <p>
+                    © 2026 Robinson Creek Ranch. All rights reserved.
+                    <span> | </span>
+                    <a href="#">Privacy Policy</a>
+                    <span> | </span>
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ================= FOOTER END ================= -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./js/script.js">
 </body>
+
 </html>

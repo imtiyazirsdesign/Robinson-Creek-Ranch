@@ -1,0 +1,280 @@
+/* ================= DINING PAGE HEADER ================= */
+.dining-header {
+  position: relative;
+  padding: 110px 0 80px;
+
+  /* Background image + overlay */
+  background:
+    linear-gradient(
+      rgba(20, 18, 16, 0.75),
+      rgba(20, 18, 16, 0.85)
+    ),
+    url("../image/dining-header.png") center/cover no-repeat;
+}
+
+/* Title */
+.dining-title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.dining-title span {
+  color: #f5b21b;
+}
+
+/* Subtitle */
+.dining-subtitle {
+  color: #cfcfcf;
+  font-size: 1.1rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dining-header {
+    padding: 90px 0 60px;
+  }
+
+  .dining-title {
+    font-size: 2.3rem;
+  }
+}
+
+
+/* ================= PRIMARY DINING VENUES ================= */
+.dining-venues {
+  background-color: #0f0f0f;
+  padding: 100px 0;
+}
+
+/* IMAGE */
+.venue-img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.venue-content {
+  padding: 30px 40px;
+}
+
+.venue-content h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.venue-content p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* BADGE */
+.venue-badge {
+  display: inline-block;
+  background-color: rgba(245, 166, 35, 0.15);
+  color: #f5a623;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* TIME */
+.venue-time {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #a9a9a9;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .venue-content {
+    padding: 25px 15px;
+    text-align: center;
+  }
+
+  .venue-content p {
+    margin: 0 auto;
+  }
+}
+/* ================= SIGNATURE EXPERIENCES ================= */
+.signature-experiences {
+  background-color: #0b0b0b;
+  padding: 100px 0;
+}
+
+/* CARD BASE */
+.experience-card {
+  border-radius: 22px;
+  padding: 45px 35px;
+  height: 100%;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ICON */
+.experience-icon {
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+
+/* TEXT */
+.experience-card h5 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.experience-card p {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* COLOR VARIANTS */
+.green-card {
+  background: linear-gradient(135deg, #0f3d2e, #145a42);
+}
+
+.purple-card {
+  background: linear-gradient(135deg, #3a1c5a, #5a2d82);
+}
+
+.gold-card {
+  background: linear-gradient(135deg, #6a4b1f, #8a6b2f);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .signature-experiences {
+    padding: 70px 0;
+  }
+
+  .experience-card {
+    padding: 35px 25px;
+  }
+}
+/* ================= DINING CTA ================= */
+.dining-cta {
+  position: relative;
+  padding: 110px 0 90px;
+  text-align: center;
+
+  /* Background image + dark overlay */
+  background:
+    linear-gradient(
+      rgba(8, 8, 8, 0.308),
+      rgba(8, 8, 8, 0.9)
+    ),
+    url("../image/dinninh-table.png") center/cover no-repeat;
+}
+
+/* TITLE */
+.cta-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.cta-title span {
+  color: #f5a623;
+}
+
+/* SUBTITLE */
+.cta-subtitle {
+  font-size: 1.05rem;
+  color: #cfcfcf;
+  max-width: 520px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+}
+
+/* BUTTON */
+.dining-cta-btn {
+  background-color: #f5a623 !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  padding: 14px 36px !important;
+  border-radius: 50px !important;
+  transition: all 0.3s ease !important;
+}
+
+.dining-cta-btn:hover {
+  background-color: #ffb84d !important;
+  transform: translateY(-3px) !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .dining-cta {
+    padding: 90px 0 70px;
+  }
+
+  .cta-title {
+    font-size: 2.3rem;
+  }
+}
+
+/* ================= DINING INFORMATION ================= */
+.dining-info {
+  background-color: #101010;
+  padding: 90px 0;
+}
+
+/* CARD */
+.info-card {
+  background: #1a1a1a;
+  border-radius: 18px;
+  padding: 35px 30px;
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* ICON */
+.info-icon {
+  font-size: 2.1rem;
+  margin-bottom: 15px;
+  color: #f5a623;
+}
+
+/* TEXT */
+.info-card h5 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .dining-info {
+    padding: 70px 0;
+  }
+}

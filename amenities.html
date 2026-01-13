@@ -1,11 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amenities</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/amenities.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
 </head>
+
 <body>
-    
+        <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-modern fixed-top">
+        <div class="container">
+
+            <!-- LOGO (IMAGE) -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./image/logo.png" alt="Robinson Creek Ranch" class="navbar-logo" />
+            </a>
+
+            <!-- MOBILE TOGGLE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./accommodations.html">Accommodations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./amenities.html">Amenities</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dining.html">Dining</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./events.html">Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cannabis.html">Cannabis</a>
+                    </li>
+
+                </ul>
+
+                <!-- CTA BUTTON -->
+                <a href="#booking" class="btn btn-primary-custom ms-lg-4">
+                    Book Your Stay
+                </a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- ================= NAVBAR END ================= -->
+    <!-- ================= HERO / AMENITIES HEADER ================= -->
+    <section class="amenities-hero d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <h1 class="hero-title">
+                        Ranch <span>Amenities</span>
+                    </h1>
+
+                    <p class="hero-subtitle mt-3">
+                        Everything you need for a relaxing, comfortable, and unforgettable stay
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= CORE AMENITIES ================= -->
+    <section class="core-amenities">
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="row mb-5 text-center">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">
+                        Core <span>Amenities</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Thoughtfully curated essentials for comfort, relaxation, and convenience
+                    </p>
+                </div>
+            </div>
+
+            <!-- AMENITIES GRID -->
+            <div class="row g-4">
+
+                <!-- WIFI -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">📶</div>
+                        <h5>High-Speed Wi-Fi</h5>
+                        <p>Stay connected throughout the property with fast, reliable internet.</p>
+                    </div>
+                </div>
+
+                <!-- PARKING -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🚗</div>
+                        <h5>Free Parking</h5>
+                        <p>Secure and convenient parking available for all guests.</p>
+                    </div>
+                </div>
+
+                <!-- POOL -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">♨️</div>
+                        <h5>Pool & Hot Tub</h5>
+                        <p>Relax in our heated pool and private hot tub facilities.</p>
+                    </div>
+                </div>
+
+                <!-- FITNESS -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🏋️</div>
+                        <h5>Fitness Center</h5>
+                        <p>24/7 access to modern gym equipment and wellness space.</p>
+                    </div>
+                </div>
+
+                <!-- KITCHEN -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🍽️</div>
+                        <h5>Farm Kitchen</h5>
+                        <p>On-site dining with fresh, locally sourced ingredients.</p>
+                    </div>
+                </div>
+
+                <!-- SPA -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">✨</div>
+                        <h5>Spa Services</h5>
+                        <p>Massage and wellness treatments for complete relaxation.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXPERIENCE AMENITIES ================= -->
+    <section class="experience-amenities">
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">
+                        Experience & <span>Outdoor Living</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Discover moments designed for adventure, relaxation, and connection with nature
+                    </p>
+                </div>
+            </div>
+
+            <!-- AMENITIES GRID -->
+            <div class="row g-4">
+
+                <!-- BIKE RENTALS -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="experience-card">
+                        <div class="experience-icon">🚴</div>
+                        <h5>Bike Rentals</h5>
+                        <p>Explore scenic trails and countryside paths on two wheels.</p>
+                    </div>
+                </div>
+
+                <!-- NATURE TRAILS -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="experience-card">
+                        <div class="experience-icon">🌲</div>
+                        <h5>Nature Trails</h5>
+                        <p>Walk, hike, or unwind on miles of peaceful natural trails.</p>
+                    </div>
+                </div>
+
+                <!-- EVENT SPACES -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="experience-card">
+                        <div class="experience-icon">🎶</div>
+                        <h5>Event Spaces</h5>
+                        <p>Indoor and outdoor venues for celebrations and gatherings.</p>
+                    </div>
+                </div>
+
+                <!-- COFFEE BAR -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="experience-card">
+                        <div class="experience-icon">☕</div>
+                        <h5>Coffee Bar</h5>
+                        <p>Enjoy freshly brewed coffee and tea throughout the day.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CTA SECTION ================= -->
+    <section class="cta-section d-flex align-items-center">
+        <div class="cta-overlay"></div>
+
+        <div class="container position-relative">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+
+                    <div class="cta-box">
+                        <h2>
+                            Plan Your <span>Stay</span>
+                        </h2>
+
+                        <p>
+                            Discover comfort, nature, and unforgettable experiences at Robinson Creek Ranch.
+                        </p>
+
+                        <a href="#accommodations" class="btn cta-btn">
+                            View Accommodations
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- ================= FOOTER ================= -->
+    <footer class="footer-modern">
+        <div class="container">
+
+            <!-- Top Footer -->
+            <div class="row gy-4">
+
+                <!-- Logo & About -->
+                <div class="col-lg-4">
+                    <h4 class="footer-logo">Robinson Creek Ranch</h4>
+                    <p class="footer-text">
+                        Where luxury ranch living meets premium cannabis experiences in the
+                        heart of nature.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Accommodations</a></li>
+                        <li><a href="#">Experiences</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <p><i class="bi bi-geo-alt"></i> Northern California, USA</p>
+                    <p><i class="bi bi-envelope"></i> info@robinsoncreekranch.com</p>
+                    <p><i class="bi bi-telephone"></i> +1 (234) 567-890</p>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <hr class="footer-divider" />
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom text-center">
+                <p>
+                    © 2026 Robinson Creek Ranch. All rights reserved.
+                    <span> | </span>
+                    <a href="#">Privacy Policy</a>
+                    <span> | </span>
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ================= FOOTER END ================= -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./js/script.js">
 </body>
+
 </html>

@@ -1,11 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/events.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
+
 <body>
-    
+        <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-modern fixed-top">
+        <div class="container">
+
+            <!-- LOGO (IMAGE) -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./image/logo.png" alt="Robinson Creek Ranch" class="navbar-logo" />
+            </a>
+
+            <!-- MOBILE TOGGLE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./accommodations.html">Accommodations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./amenities.html">Amenities</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dining.html">Dining</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./events.html">Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cannabis.html">Cannabis</a>
+                    </li>
+
+                </ul>
+
+                <!-- CTA BUTTON -->
+                <a href="#booking" class="btn btn-primary-custom ms-lg-4">
+                    Book Your Stay
+                </a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- ================= NAVBAR END ================= -->
+    <!-- ================= EVENTS PAGE HEADER ================= -->
+    <section class="events-header">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+
+                <div class="col-lg-8">
+                    <h1 class="events-title">
+                        Events <span>at the Ranch</span>
+                    </h1>
+
+                    <p class="events-subtitle">
+                        Create unforgettable memories in our stunning venues
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================= EVENTS PAGE HEADER END ================= -->
+    <!-- ================= EVENT TYPES / VENUES ================= -->
+    <section class="event-types">
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="row mb-5 text-center">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">
+                        Event <span>Venues</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Thoughtfully designed spaces for every kind of celebration
+                    </p>
+                </div>
+            </div>
+
+            <!-- EVENTS GRID -->
+            <div class="row g-4">
+
+                <!-- WEDDINGS -->
+                <div class="col-lg-6">
+                    <div class="event-card" style="background-image:url('../image/event1.jfif')">
+                        <div class="event-overlay"></div>
+                        <div class="event-content">
+                            <div class="event-icon">💍</div>
+                            <h5>Weddings</h5>
+                            <p>Say “I do” surrounded by mountain views and natural beauty.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CORPORATE RETREATS -->
+                <div class="col-lg-6">
+                    <div class="event-card" style="background-image:url('../image/event2.jfif')">
+                        <div class="event-overlay"></div>
+                        <div class="event-content">
+                            <div class="event-icon">💼</div>
+                            <h5>Corporate Retreats</h5>
+                            <p>Team building and strategy sessions in an inspiring setting.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRIVATE CONCERTS -->
+                <div class="col-lg-6">
+                    <div class="event-card" style="background-image:url('../image/event3.jfif')">
+                        <div class="event-overlay"></div>
+                        <div class="event-content">
+                            <div class="event-icon">🎶</div>
+                            <h5>Private Concerts</h5>
+                            <p>Exclusive performances under the stars in a stunning venue.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAMILY REUNIONS -->
+                <div class="col-lg-6">
+                    <div class="event-card" style="background-image:url('../image/event1.jfif')">
+                        <div class="event-overlay"></div>
+                        <div class="event-content">
+                            <div class="event-icon">👨‍👩‍👧‍👦</div>
+                            <h5>Family Reunions</h5>
+                            <p>Bring loved ones together in a warm, memorable location.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================= EVENT TYPES END ================= -->
+    <!-- ================= UPCOMING EVENTS ================= -->
+    <section class="upcoming-events">
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="row mb-4">
+                <div class="col-lg-8">
+                    <h2 class="section-title">
+                        Upcoming <span>Events</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Join us for seasonal celebrations and special gatherings
+                    </p>
+                </div>
+            </div>
+
+            <!-- EVENTS LIST -->
+            <div class="row g-3">
+
+                <!-- EVENT 1 -->
+                <div class="col-lg-6">
+                    <div class="event-list-card">
+                        <div class="event-date">
+                            <span class="event-month">Dec</span>
+                            <span class="event-day">15</span>
+                        </div>
+                        <div class="event-info">
+                            <h6>Winter Solstice Celebration</h6>
+                            <span class="event-tag">Community</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EVENT 2 -->
+                <div class="col-lg-6">
+                    <div class="event-list-card">
+                        <div class="event-date">
+                            <span class="event-month">Dec</span>
+                            <span class="event-day">31</span>
+                        </div>
+                        <div class="event-info">
+                            <h6>New Year’s Eve Gala</h6>
+                            <span class="event-tag">Special Event</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EVENT 3 -->
+                <div class="col-lg-6">
+                    <div class="event-list-card">
+                        <div class="event-date">
+                            <span class="event-month">Jan</span>
+                            <span class="event-day">20</span>
+                        </div>
+                        <div class="event-info">
+                            <h6>Cannabis & Cuisine Night</h6>
+                            <span class="event-tag">Dining</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EVENT 4 -->
+                <div class="col-lg-6">
+                    <div class="event-list-card">
+                        <div class="event-date">
+                            <span class="event-month">Feb</span>
+                            <span class="event-day">14</span>
+                        </div>
+                        <div class="event-info">
+                            <h6>Valentine’s Wine & Weed Pairing</h6>
+                            <span class="event-tag">Special Event</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================= UPCOMING EVENTS END ================= -->
+
+    <!-- ================= EVENTS CTA ================= -->
+    <section class="events-cta">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+
+                <div class="col-lg-8">
+                    <h2 class="events-cta-title">
+                        Plan Your <span>Event</span>
+                    </h2>
+
+                    <p class="events-cta-subtitle">
+                        Let our team help you create a memorable experience at Robinson Creek Ranch.
+                    </p>
+
+                    <a href="#event-inquiry" class="btn events-cta-btn">
+                        Request Event Information
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================= EVENTS CTA END ================= -->
+ <!-- ================= FOOTER ================= -->
+    <footer class="footer-modern">
+        <div class="container">
+
+            <!-- Top Footer -->
+            <div class="row gy-4">
+
+                <!-- Logo & About -->
+                <div class="col-lg-4">
+                    <h4 class="footer-logo">Robinson Creek Ranch</h4>
+                    <p class="footer-text">
+                        Where luxury ranch living meets premium cannabis experiences in the
+                        heart of nature.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Accommodations</a></li>
+                        <li><a href="#">Experiences</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <p><i class="bi bi-geo-alt"></i> Northern California, USA</p>
+                    <p><i class="bi bi-envelope"></i> info@robinsoncreekranch.com</p>
+                    <p><i class="bi bi-telephone"></i> +1 (234) 567-890</p>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <hr class="footer-divider" />
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom text-center">
+                <p>
+                    © 2026 Robinson Creek Ranch. All rights reserved.
+                    <span> | </span>
+                    <a href="#">Privacy Policy</a>
+                    <span> | </span>
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ================= FOOTER END ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./js/script.js">
 </body>
+
 </html>

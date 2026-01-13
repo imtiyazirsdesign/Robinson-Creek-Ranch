@@ -45,3 +45,99 @@
     font-size: 2.3rem;
   }
 }
+/* ================= ACCOMMODATION GRID ================= */
+.accommodation-grid {
+  padding: 120px 0;
+  background: #141210;
+}
+
+/* Card */
+.accommodation-card-modern {
+  background: #1c1916;
+  border-radius: 22px;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+
+.accommodation-card-modern:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+
+/* Image */
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+/* Price Badge */
+.price-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #f5b21b;
+  color: #141210;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Body */
+.card-body {
+  padding: 10px !important;
+}
+
+.card-body h4 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.description {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Meta */
+.meta {
+  display: flex;
+  gap: 18px;
+  font-size: 0.85rem;
+  color: #bfbfbf;
+  margin: 14px 0;
+}
+
+.meta i {
+  color: #f5b21b;
+  margin-right: 5px;
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.features span {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  color: #e0e0e0;
+}
+
+/* Featured Card */
+.accommodation-card-modern.featured {
+  border: 1px solid rgba(245, 178, 27, 0.35);
+}
+

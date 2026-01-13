@@ -1,0 +1,230 @@
+/* ================= AMENITIES HERO ================= */
+.amenities-hero {
+    min-height: 30vh;
+    background:
+        linear-gradient(rgba(15, 15, 15, 0.85),
+            rgba(15, 15, 15, 0.85)),
+        url("../image/amenities-header.png");
+    /* optional background image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+/* TITLE */
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.hero-title span {
+    color: #f5a623;
+    /* accent color */
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #cfcfcf;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 768px) {
+    .amenities-hero {
+        min-height: 50vh;
+        padding: 80px 0;
+    }
+}
+
+/* ================= CORE AMENITIES ================= */
+.core-amenities {
+    background-color: #0f0f0f;
+    padding: 100px 0;
+}
+
+/* SECTION TITLE */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.section-title span {
+    color: #f5a623;
+}
+
+.section-subtitle {
+    color: #bcbcbc;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 15px auto 0;
+    line-height: 1.6;
+}
+
+/* CARD */
+.amenity-card {
+    background: #1a1a1a;
+    border-radius: 18px;
+    padding: 40px 30px;
+    height: 100%;
+    transition: all 0.35s ease;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.amenity-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ICON */
+.amenity-icon {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #f5a623;
+}
+
+/* TEXT */
+.amenity-card h5 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.amenity-card p {
+    color: #cfcfcf;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .core-amenities {
+        padding: 70px 0;
+    }
+}
+
+/* ================= EXPERIENCE AMENITIES ================= */
+.experience-amenities {
+    background: linear-gradient(180deg, #111111, #0b0b0b);
+    padding: 90px 0;
+}
+
+/* CARD */
+.experience-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 35px 25px;
+    height: 100%;
+    transition: all 0.35s ease;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* ICON */
+.experience-icon {
+    font-size: 2.4rem;
+    margin-bottom: 18px;
+    color: #f5a623;
+}
+
+/* TEXT */
+.experience-card h5 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experience-card p {
+    color: #c9c9c9;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .experience-amenities {
+        padding: 70px 0;
+    }
+}
+
+/* ================= CTA SECTION ================= */
+.cta-section {
+    position: relative;
+    min-height: 60vh;
+    background: url("../image/amenities-header.png") center/cover no-repeat;
+    display: flex;
+    padding: 80px 0;
+}
+
+/* OVERLAY */
+.cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(10, 10, 10, 0.329),
+            rgba(10, 10, 10, 0.85));
+}
+
+/* GLASS BOX */
+.cta-box {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 60px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* TEXT */
+.cta-box h2 {
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cta-box h2 span {
+    color: #f5a623 !important;
+}
+
+.cta-box p {
+    color: #d3d3d3 !important;
+    font-size: 1rem !important;
+    max-width: 520px !important;
+    margin: 0 auto 30px !important;
+    line-height: 1.7 !important;
+}
+
+/* BUTTON */
+.cta-btn {
+    background-color: #f5a623 !important;
+    color: #000 !important;
+    font-weight: 600 !important;
+    padding: 14px 34px !important;
+    border-radius: 50px !important;
+    transition: all 0.3s ease !important;
+}
+
+.cta-btn:hover {
+    background-color: #ffb84d !important;
+    transform: translateY(-3px) !important;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .cta-section {
+        min-height: 50vh;
+    }
+
+    .cta-box {
+        padding: 40px 25px;
+    }
+}
