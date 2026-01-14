@@ -186,16 +186,16 @@
   }
 }
 
-/* ================= EXPERIENCE / ACTIVITIES HEADER ================= */
+/* ================= EXPERIENCE / ACTIVITIES ================= */
 .experience-header {
-  padding: 80px 0 50px;
+  padding: 90px 0 80px;
   background: #141210;
 }
 
 /* Title */
 .section-title {
   color: #ffffff;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 14px;
 }
@@ -212,26 +212,71 @@
   margin: 0 auto;
 }
 
-/* Responsive */
+/* EXPERIENCE CARD */
+.experience-card {
+  background: #1c1916;
+  border-radius: 16px;
+  padding: 35px 28px;
+  height: 100%;
+  text-align: center;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border-color: rgba(245, 178, 27, 0.35);
+}
+
+/* ICON */
+.icon-box {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: rgba(245, 178, 27, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+/* CARD TEXT */
+.experience-card h4 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.experience-card p {
+  color: #b9b9b9;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .experience-header {
-    padding: 65px 0 40px;
+    padding: 70px 0 60px;
   }
 
   .section-title {
     font-size: 2rem;
   }
 }
-/* ================= SOCIAL PROOF / CREDIBILITY HEADER ================= */
+
+/* ================= SOCIAL PROOF / CREDIBILITY ================= */
 .social-proof-header {
-  padding: 80px 0 50px;
+  padding: 90px 0 80px;
   background: #141210;
 }
 
 /* Title */
 .section-title {
   color: #ffffff;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 14px;
 }
@@ -248,16 +293,88 @@
   margin: 0 auto;
 }
 
-/* Responsive */
+/* STATS */
+.proof-stat {
+  background: #1c1916;
+  padding: 30px 20px;
+  border-radius: 14px;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.proof-stat h3 {
+  color: #f5b21b;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.proof-stat p {
+  color: #b9b9b9;
+  font-size: 0.95rem;
+}
+
+.proof-stat:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.55);
+}
+
+/* RECOGNITION CARDS */
+.recognition-card {
+  background: #1c1916;
+  border-radius: 16px;
+  padding: 36px 30px;
+  height: 100%;
+  text-align: center;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.recognition-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border-color: rgba(245, 178, 27, 0.35);
+}
+
+/* ICON */
+.icon-box {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: rgba(245, 178, 27, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+/* TEXT */
+.recognition-card h4 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.recognition-card p {
+  color: #b9b9b9;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .social-proof-header {
-    padding: 65px 0 40px;
+    padding: 70px 0 60px;
   }
 
   .section-title {
     font-size: 2rem;
   }
 }
+
 /* ================= PRACTICAL INFO SECTION ================= */
 .practical-info-section {
   padding: 85px 0;
